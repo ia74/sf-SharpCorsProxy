@@ -12,7 +12,7 @@ namespace CorsProxy
     {
 
         public static String SERVER_ADDRESS = "127.0.0.1";
-        public static int SERVER_PORT = 19191;
+        public static int SERVER_PORT = 7799;
         public static int TIMEOUT = 30*1000;
         public static bool KEEP_USER_AGENT = false;
 
@@ -21,7 +21,7 @@ namespace CorsProxy
             [Option('a', "address", Required = false, HelpText = "Address to bind the proxy to", Default = "127.0.0.1")]
             public String Address { get; set; }
 
-            [Option('p', "port", Required = false, HelpText = "Port on which to run the proxy", Default = 19191)]
+            [Option('p', "port", Required = false, HelpText = "Port on which to run the proxy", Default = 7799)]
             public int Port{ get; set; }
 
             //[Option('t', "timeout", Required = false, HelpText = "Number os seconds to wait for a response", Default = 30)]
